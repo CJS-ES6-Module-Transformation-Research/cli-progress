@@ -26,10 +26,7 @@
     "scripts": {
         "lint": "eslint lib/**.js",
         "pretest": "npm run lint",
-        "test": "mocha test/**/*.test.js",
-        "ESM": "mocha test/**/*.test.js",
-        "ESM2": "",
-        "CJS": "mocha test/**/*.test.js"
+        "test": "mocha test/**/*.test.js"
     },
     "engines": {
         "node": ">=4"
