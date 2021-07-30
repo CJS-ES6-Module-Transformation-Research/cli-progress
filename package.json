@@ -28,7 +28,13 @@
         "pretest": "npm run lint",
         "test": "mocha test/**/*.test.js",
         "ESM": "mocha test/**/*.test.js",
-        "CJS": "mocha test/**/*.test.js"
+        "CJS": "mocha test/**/*.test.js",
+        "rollup": "NODE_ENV=default rollup -c configs/rollup.config.js",
+        "rollup:preprocessed": "NODE_ENV=preprocessed rollup -c configs/rollup.config.js",
+        "rollup:transformed": "NODE_ENV=transformed rollup -c configs/rollup.config.js",
+        "webpack": "NODE_ENV=default webpack -c configs/webpack.config.js",
+        "webpack:preprocessed": "NODE_ENV=preprocessed webpack -c configs/webpack.config.js",
+        "webpack:transformed": "NODE_ENV=transformed webpack -c configs/webpack.config.js"
     },
     "engines": {
         "node": ">=4"
@@ -38,11 +44,19 @@
     "license": "MIT",
     "dependencies": {
         "colors": "^1.1.2",
+        "readline": "^1.3.0",
         "string-width": "^4.2.0"
     },
     "devDependencies": {
+        "@rollup/plugin-commonjs": "^20.0.0",
+        "@rollup/plugin-node-resolve": "^13.0.4",
         "eslint": "^6.4.0",
         "eslint-config-aenondynamics": "^0.2.0",
-        "mocha": "^7.1.1"
+        "mocha": "^7.1.1",
+        "rollup": "^2.53.3",
+        "webpack": "^4.46.0",
+        "webpack-bundle-analyzer": "^4.4.2",
+        "webpack-cli": "^4.7.2",
+        "webpack-node-externals": "^3.0.0"
     }
 }
