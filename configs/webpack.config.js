@@ -15,8 +15,8 @@
   const pkg = JSON.parse(fs.readFileSync('./package.json'));
 
   const config = {
-    entry: pkg.main,
-    mode: 'development',
+    entry: path.resolve(__dirname, '..', pkg.main),
+    mode: 'production',
     output: {
       path: path.resolve(__dirname, '..', 'webpack-bundles'),
       filename: process.env.NODE_ENV + '.js',
