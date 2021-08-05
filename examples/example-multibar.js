@@ -1,5 +1,4 @@
-const _progress = require('../cli-progress');
-
+const _progress = require('../cli-progress.js');
 const files = {
     'eta.js        ': 187,
     'generic-bar.js': 589,
@@ -9,8 +8,6 @@ const files = {
     'terminal.js   ': 4123
 };
 const bars = [];
-
-// create new container
 const multibar = new _progress.MultiBar({
     format: ' {bar} | "{file}" | {value}/{total}',
     hideCursor: true,
@@ -19,34 +16,20 @@ const multibar = new _progress.MultiBar({
     clearOnComplete: true,
     stopOnComplete: true
 });
-
-console.log("Downloading files..\n");
-
-// add bars
-for (const filename in files){
+console.log('Downloading files..\n');
+for (const filename in files) {
     const size = files[filename];
-
-    bars.push(multibar.create(size, 0, {file: filename}));
+    bars.push(multibar.create(size, 0, { file: filename }));
 }
-
-const timer = setInterval(function(){
-
-    // increment
-    for (let i=0; i<bars.length;i++){
+const timer = setInterval(function () {
+    for (let i = 0; i < bars.length; i++) {
         const bar = bars[i];
-
-        // download complete ?
-        if (bar.value < bar.total){
+        if (bar.value < bar.total) {
             bar.increment();
         }
     }
-
-    // progress bar running ?
-    // check "isActive" property in case you've enabled "stopOnComplete" !
-    if (multibar.isActive === false){
+    if (multibar.isActive === false) {
         clearInterval(timer);
-
-        //multibar.stop();
-        console.log('Download complete!')
+        console.log('Download complete!');
     }
 }, 3);

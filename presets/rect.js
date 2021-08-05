@@ -1,5 +1,12 @@
-module.exports = {
-    format: ' {bar}\u25A0 {percentage}% | ETA: {eta}s | {value}/{total}',
-    barCompleteChar: '\u25A0',
-    barIncompleteChar: ' '
-};
+var __exports;
+var format;
+var barCompleteChar;
+var barIncompleteChar;
+__exports = {};
+module.exports = __exports;
+format = ' {bar}\u25A0 {percentage}% | ETA: {eta}s | {value}/{total}';
+module.exports.format = format;
+barCompleteChar = '\u25A0';
+module.exports.barCompleteChar = barCompleteChar;
+barIncompleteChar = ' ';
+module.exports.barIncompleteChar = barIncompleteChar;

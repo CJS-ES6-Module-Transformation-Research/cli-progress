@@ -1,6 +1,12 @@
-// cli-progress legacy style as of 1.x
-module.exports = {
-    format: ' {bar} {percentage}% | ETA: {eta}s | {value}/{total}',
-    barCompleteChar: '\u2588',
-    barIncompleteChar: '\u2591'
-};
+var __exports;
+var format;
+var barCompleteChar;
+var barIncompleteChar;
+__exports = {};
+module.exports = __exports;
+format = ' {bar} {percentage}% | ETA: {eta}s | {value}/{total}';
+module.exports.format = format;
+barCompleteChar = '\u2588';
+module.exports.barCompleteChar = barCompleteChar;
+barIncompleteChar = '\u2591';
+module.exports.barIncompleteChar = barIncompleteChar;

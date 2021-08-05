@@ -1,11 +1,19 @@
-const _legacy = require('./legacy');
-const _shades_classic = require('./shades-classic');
-const _shades_grey = require('./shades-grey');
-const _rect = require('./rect');
-
-module.exports = {
-    legacy: _legacy,
-    shades_classic: _shades_classic,
-    shades_grey: _shades_grey,
-    rect: _rect
-};
+const _legacy = require('./legacy.js');
+const _shades_classic = require('./shades-classic.js');
+const _shades_grey = require('./shades-grey.js');
+const _rect = require('./rect.js');
+var __exports;
+var legacy;
+var shades_classic;
+var shades_grey;
+var rect;
+__exports = {};
+module.exports = __exports;
+legacy = _legacy;
+module.exports.legacy = legacy;
+shades_classic = _shades_classic;
+module.exports.shades_classic = shades_classic;
+shades_grey = _shades_grey;
+module.exports.shades_grey = shades_grey;
+rect = _rect;
+module.exports.rect = rect;
