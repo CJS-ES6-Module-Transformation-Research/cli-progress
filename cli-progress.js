@@ -1,13 +1,12 @@
-const _SingleBar = require('./lib/single-bar');
-const _MultiBar = require('./lib/multi-bar');
-const _Presets = require('./presets/index');
-const _Formatter = require('./lib/formatter');
-const _defaultFormatValue = require('./lib/format-value');
-const _defaultFormatBar = require('./lib/format-bar');
-const _defaultFormatTime = require('./lib/format-time');
-
-// sub-module access
-module.exports = {
+const _SingleBar = require('./lib/single-bar.js');
+const _MultiBar = require('./lib/multi-bar.js');
+const _Presets = require('./presets/index.js');
+const _Formatter = require('./lib/formatter.js');
+const _defaultFormatValue = require('./lib/format-value.js');
+const _defaultFormatBar = require('./lib/format-bar.js');
+const _defaultFormatTime = require('./lib/format-time.js');
+var __exports;
+__exports = {
     Bar: _SingleBar,
     SingleBar: _SingleBar,
     MultiBar: _MultiBar,
@@ -19,3 +18,4 @@ module.exports = {
         TimeFormat: _defaultFormatTime
     }
 };
+module.exports = __exports;

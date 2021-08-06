@@ -1,6 +1,7 @@
-// cli-progress legacy style as of 1.x
-module.exports = {
+var __exports;
+__exports = {
     format: 'progress [{bar}] {percentage}% | ETA: {eta}s | {value}/{total}',
     barCompleteChar: '=',
     barIncompleteChar: '-'
 };
+module.exports = __exports;
