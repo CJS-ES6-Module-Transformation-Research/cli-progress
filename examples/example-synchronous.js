@@ -1,4 +1,4 @@
-const _progress = require('../cli-progress.js');
+import _progress from '../cli-progress.js';
 function fibonacci(n) {
     if (n < 2) {
         return 1;

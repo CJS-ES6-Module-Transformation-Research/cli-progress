@@ -1,5 +1,5 @@
-var _progress = require('../cli-progress.js');
-var _colors = require('colors');
+import _progress from '../cli-progress.js';
+import _colors from 'colors';
 function showPreset(name) {
     console.log(_colors.magenta('Preset: ' + name));
     var bar = new _progress.Bar({}, _progress.Presets[name] || _progress.Presets.legacy);

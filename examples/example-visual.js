@@ -1,5 +1,5 @@
-const _progress = require('../cli-progress.js');
-const _colors = require('colors');
+import _progress from '../cli-progress.js';
+import _colors from 'colors';
 function Example5() {
     console.log('');
     var b1 = new _progress.Bar({
