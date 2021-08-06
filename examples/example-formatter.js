@@ -1,5 +1,5 @@
-const _progress = require('../cli-progress.js');
-const _colors = require('colors');
+import _progress from '../cli-progress.js';
+import _colors from 'colors';
 function myFormatter(options, params, payload) {
     const bar = options.barCompleteString.substr(0, Math.round(params.progress * options.barsize));
     if (params.value >= params.total) {

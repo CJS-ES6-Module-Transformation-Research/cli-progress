@@ -1,6 +1,6 @@
-const _cliProgress = require('../cli-progress.js');
-const _util = require('util');
-const sleep = _util.promisify(setTimeout);
+import _cliProgress from '../cli-progress.js';
+import { promisify } from 'util';
+const sleep = promisify(setTimeout);
 const bar1 = new _cliProgress.Bar({}, _cliProgress.Presets.shades_classic);
 async function updateBar() {
     bar1.update(1);

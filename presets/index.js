@@ -1,7 +1,8 @@
-const _legacy = require('./legacy.js');
-const _shades_classic = require('./shades-classic.js');
-const _shades_grey = require('./shades-grey.js');
-const _rect = require('./rect.js');
+import _legacy from './legacy.js';
+import _shades_classic from './shades-classic.js';
+import _shades_grey from './shades-grey.js';
+import _rect from './rect.js';
+var defaultExport = {};
 var __exports;
 __exports = {
     legacy: _legacy,
@@ -9,4 +10,5 @@ __exports = {
     shades_grey: _shades_grey,
     rect: _rect
 };
-module.exports = __exports;
+defaultExport = __exports;
+export default defaultExport;

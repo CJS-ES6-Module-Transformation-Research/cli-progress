@@ -1,4 +1,4 @@
-const _progress = require('../cli-progress.js');
+import _progress from '../cli-progress.js';
 Example1(function () {
     Example2(function () {
         Example3(function () {

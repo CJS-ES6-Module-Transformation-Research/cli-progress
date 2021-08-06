@@ -1,4 +1,4 @@
-const _progress = require('../cli-progress.js');
+import _progress from '../cli-progress.js';
 const files = {
     'eta.js        ': 187,
     'generic-bar.js': 589,

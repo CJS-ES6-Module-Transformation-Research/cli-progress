@@ -1,4 +1,4 @@
-const _progress = require('../cli-progress.js');
+import _progress from '../cli-progress.js';
 const bar = new _progress.Bar({
     format: ' >> [\x1B[32m{bar}\x1B[0m] {percentage}% | ETA: {eta}s | {value}/{total}',
     barCompleteChar: '#',

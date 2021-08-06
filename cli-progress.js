@@ -1,10 +1,11 @@
-const _SingleBar = require('./lib/single-bar.js');
-const _MultiBar = require('./lib/multi-bar.js');
-const _Presets = require('./presets/index.js');
-const _Formatter = require('./lib/formatter.js');
-const _defaultFormatValue = require('./lib/format-value.js');
-const _defaultFormatBar = require('./lib/format-bar.js');
-const _defaultFormatTime = require('./lib/format-time.js');
+import _SingleBar from './lib/single-bar.js';
+import _MultiBar from './lib/multi-bar.js';
+import _Presets from './presets/index.js';
+import _Formatter from './lib/formatter.js';
+import _defaultFormatValue from './lib/format-value.js';
+import _defaultFormatBar from './lib/format-bar.js';
+import _defaultFormatTime from './lib/format-time.js';
+var defaultExport = {};
 var __exports;
 __exports = {
     Bar: _SingleBar,
@@ -18,4 +19,5 @@ __exports = {
         TimeFormat: _defaultFormatTime
     }
 };
-module.exports = __exports;
+defaultExport = __exports;
+export default defaultExport;

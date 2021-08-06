@@ -1,5 +1,5 @@
-const _assert = require('assert');
-const _formatter = require('../../lib/formatter.js');
+import _assert from 'assert';
+import _formatter from '../../lib/formatter.js';
 const _defaults = {
     options: {
         throttleTime: 100,
